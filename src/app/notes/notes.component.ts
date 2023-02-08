@@ -32,7 +32,7 @@ export class NotesComponent implements OnInit {
   note_keys: any = []
   notesGot: boolean = false
   message:any='Ваши записи ещё не появились)' + '</br>'+
-    'Подождите загрузк или создайте первую запись'
+    'Подождите загрузку или создайте первую запись'
 
   textWidth:string=''
 
