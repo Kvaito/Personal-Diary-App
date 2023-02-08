@@ -1,0 +1,25 @@
+<div class="auth_container">
+  <div class="blue_block auth_block">
+    <span>Вход в аккаунт</span>
+    <br>
+    <span>{{message}}</span>
+    <form>
+      <div>
+        <div class="text_space_container">
+          <div>
+            <label>Email<br> <input required class="input_text" type="text" name="email" [(ngModel)]="email"></label>
+          </div>
+          <div>
+            <label>Password<br> <input required class="input_text" type="password" name="password" [(ngModel)]="password"></label>
+          </div>
+        </div>
+        <div style="display:flex;justify-content: center">
+          <div class="dark_button" (click)="login()">Войти</div>
+        </div>
+      </div>
+    </form>
+    <br>
+    <div><a href="register" style="text-decoration: none;color:black">Ещё не с нами?</a></div>
+  </div>
+</div>
+

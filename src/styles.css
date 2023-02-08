@@ -1,1 +1,168 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  /*background-image: url("assets/background.jpg");*/
+  font-family: Verdana, serif;
+  background-image: url("assets/illustrations/just_image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.input_text {
+  height: 30px;
+  border-radius: 15px;
+  background-color: bisque;
+  box-shadow: inset 0 5px #416088;
+}
+
+textarea {
+  padding-top: 10px;
+  width: 100%;
+  height: 100px;
+  max-width: 100%;
+}
+
+.text_space {
+  background-color: #b3e4ef;
+  box-shadow: inset 0 5px #416088;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: inherit;
+}
+
+.text_space_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big_input_text {
+  background-color: #b3e4ef;
+  box-shadow: inset 0 5px #416088;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 65%;
+  height: 60%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.buttons_container {
+  display: flex;
+  flex-display: row;
+}
+
+.dark_button {
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  margin-left: 0;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #202434;
+  color: bisque;
+  box-shadow: 0 5px 0 0 #11151e;
+  transition: background-color 0.2s;
+}
+
+.icon_button {
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.dark_button:hover {
+  background-color: #464b6b;
+  cursor: pointer;
+}
+
+.red_block {
+  background-color: #d03b3b;
+  box-shadow: 0 5px 0 0 #751111;
+  border-radius: 15px;
+}
+
+.blue_block {
+  background-color: #8bbac4;
+  box-shadow: 0 5px 0 0 #416088;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.dark_block {
+  background-color: #202434;
+}
+
+.light_block {
+  background-color: bisque;
+}
+
+.icon_img {
+  width: 40px;
+  height: 40px;
+}
+
+.image_note {
+  width: 100%;
+  border-radius: 15px;
+  border:3px #313b54 solid;
+}
+
+.input_image_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .note{
+    flex-direction: column-reverse;
+  }
+
+  .input_image_container{
+    flex-direction: column-reverse;
+  }
+
+  .big_input_text{
+    width: unset;
+    height:70%;
+  }
+
+  .add_note_image{
+    width: 300px;
+    height:300px;
+  }
+
+  .note_text{
+  height: 100%;
+  }
+
+  .note_img{
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .title{
+    display: none;
+  }
+}

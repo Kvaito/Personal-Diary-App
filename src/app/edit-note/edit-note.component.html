@@ -1,0 +1,18 @@
+<div>
+  <div class="blue_block">
+    Изменение записи
+    <div class="input_image_container" style="width: 100%">
+      <div class="big_input_text" id="editor-js"></div>
+      <div *ngIf="(note.imageData.firePath=='')" class="add_note_image picture_place">Место для изображения</div>
+      <div class="add_note_image" *ngIf="(note.imageData.firePath!='')">
+        <img [src]="note.imageData.url" class="image_note" alt="note_img">
+      </div>
+    </div>
+      <div><label class="input-file">
+        <input type="file" name="file" accept="*.png.jpg" (change)="upload($event)">
+        <span class="input-file-btn">Изменить изображение</span>
+      </label></div>
+      <div class="dark_button" (click)="edit()">Изменить</div>
+
+  </div>
+</div>

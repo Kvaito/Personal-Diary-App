@@ -1,0 +1,14 @@
+<div class="menu red_block">
+  <div outerLink="" class="site_logo">
+    <img src="assets/icons/diary_icon.png">
+  </div>
+  <div routerLink="" class="title">My Diary</div>
+  <div class="authreg" *ngIf="!auth.userUID">
+    <div class="dark_button" routerLink="register" style="width: 140px">Регистрация</div>
+    <div class="dark_button" routerLink="login">Войти</div>
+  </div>
+  <div>
+    <div class="dark_button" *ngIf="auth.userUID" (click)="logout()">Выйти</div>
+  </div>
+</div>
+

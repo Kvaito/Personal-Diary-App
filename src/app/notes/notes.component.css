@@ -1,0 +1,32 @@
+.note{
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  min-height: 200px;
+}
+
+.note_text{
+  flex-direction: column;
+  height: 80%;
+  width: 70%;
+}
+
+.note_description
+{
+  min-width: 300px;
+  min-height: 70px;
+}
+
+.note_img{
+  width: 30%;
+  padding-left: 20px;
+
+}
+
+.main_message{
+  width: 70%;
+  display: block;
+  margin:auto;
+}
+

@@ -1,0 +1,24 @@
+<div class="register_container">
+  <div class="blue_block register_block">
+    <span>Регистрация</span>
+    <br>
+    <span>{{message}}</span>
+    <form>
+      <div >
+        <div>
+          <div style="display:flex;justify-content: center">
+            <label>Email<br> <input required class="input_text" type="text" [(ngModel)]="email" name="email"></label>
+          </div>
+          <div style="display:flex;justify-content: center">
+            <label>Password<br> <input required class="input_text" type="password" [(ngModel)]="password" name="password"></label>
+          </div>
+        </div>
+        <div style="display:flex;justify-content: center">
+          <div class="dark_button" (click)="register()" style="width: 180px;">Завести дневник</div>
+        </div>
+      </div>
+    </form>
+    <br>
+    <div><a href="login" style="text-decoration: none;color:black">Уже есть дневник?</a></div>
+  </div>
+</div>

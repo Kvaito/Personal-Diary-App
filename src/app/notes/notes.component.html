@@ -1,0 +1,24 @@
+<div>
+  <app-delete *ngIf="fire.isDeleteNote"></app-delete>
+  <div class="dark_button" style="width:150px;" routerLink="add_note">
+    <span>Добавить</span>
+  </div>
+  <div *ngIf="!notesGot" class="blue_block main_message" [innerHTML]="message">{{message}}</div>
+  <div *ngIf="notesGot">
+    <div class="note blue_block" *ngFor="let note of notes">
+      <div class="note_text">
+        <div class="buttons_container">
+          <div class="dark_button icon_button" (click)="editNote(note)"><img class="icon_img" alt="edit_icon"
+                                                                             src="assets/icons/edit.png"></div>
+          <div class="dark_button icon_button" (click)="deleteNote(note)"><img class="icon_img" alt="delete_icon"
+                                                                               src="assets/icons/delete.png"></div>
+        </div>
+        <span>{{note.date}}</span>
+        <div class="note_description text_space" [ngStyle]="{width:textWidth}" [innerHTML]="note.noteText">{{note.noteText}}</div>
+      </div>
+      <div class="note_img" *ngIf="(note.imageData.firePath!='')">
+        <img [src]="note.imageData.url" alt="note_img" class="image_note">
+      </div>
+    </div>
+  </div>
+</div>

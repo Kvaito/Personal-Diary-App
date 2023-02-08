@@ -1,0 +1,12 @@
+.auth_container{
+  display: flex;
+  justify-content: center;
+}
+
+.auth_block{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+}

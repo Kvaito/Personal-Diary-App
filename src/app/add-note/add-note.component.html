@@ -1,0 +1,16 @@
+<div>
+  <div class="blue_block">
+    Создание записи
+    {{message}}
+    <div class="input_image_container" style="width: 100%">
+      <div id="editor-js" class="big_input_text"></div>
+      <div *ngIf="!imageUploaded" class="add_note_image picture_place">Место для изображения</div>
+      <div *ngIf="imageUploaded" class="add_note_image"><img  [src]=imageStorageUrl alt="uploaded_image"></div>
+    </div>
+    <div><label class="input-file">
+      <input type="file" name="file" accept="*.png.jpg" (change)="upload($event)">
+      <span class="input-file-btn">Выберите изображение</span>
+    </label></div>
+    <div (click)="create()" class="dark_button" style="width: 170px">Создать запись</div>
+  </div>
+</div>
