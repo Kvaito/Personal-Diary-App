@@ -1,27 +1,18 @@
 # PersonalDiaryApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+Проект написан с помощью фреймворка Angular и с использованием Firebase, Editor.js
+
+Данные зарегистрированных пользователей:
+1. Email: BMO@mail.ru
+   Password: BMOBMO1
+2. Email: Finn@mail.ru
+   Password: JakeTheDog
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Для запуска приложения необходимо:
+1. Скачать файлы с данного репозитория
+2. Установить все зависимости, node_modules
+3. Ввести команду ng serve и получить доступ к сайту по ссылке: `http://localhost:4200/`
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Надеюсь на получение обратной связи. Проект занял время из-за незнакомства с библиотекой Editor.js и с Firebase Storage. Но благодаря разработке этого приложения я получил новый опыт. Спасибо.
